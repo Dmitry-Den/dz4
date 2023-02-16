@@ -14,8 +14,8 @@ double[] GetArray(int size, double minValue, double maxValue)
 }
 double ResultMax(double[] inArray)
 {
-    double max = 0;
-   for (int i = 0; i < inArray.Length; i++)
+    double max = inArray[0];
+       for (int i = 0; i < inArray.Length; i++)
     {
         if (inArray[i] > max)
 
@@ -25,7 +25,7 @@ double ResultMax(double[] inArray)
 }
 double ResultMin(double[] inArray)
 {
-    double min = 0;
+    double min = inArray[0];
    for (int i = 0; i < inArray.Length; i++)
     {
         if (inArray[i] < min)
